@@ -8,9 +8,10 @@ import in.bushansirgur.springboot.model.User;
 
 @RestController
 public class UserController {
-	
+
 	@PostMapping("/users")
-	public void printData(@RequestBody User user) {
-		System.out.println("Printing the user data:"+user);
+	public String printUser(@RequestBody User user) {
+		System.out.println("printing the user object: "+user);
+		return "Success";
 	}
 }

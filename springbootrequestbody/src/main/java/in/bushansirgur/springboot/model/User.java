@@ -2,39 +2,39 @@ package in.bushansirgur.springboot.model;
 
 public class User {
 	
-	private String firstName;
+	private String name;
 	
-	private String lastName;
+	private String location;
 	
-	private Integer age;
+	private Long age;
 
-	public String getFirstName() {
-		return firstName;
+	public String getName() {
+		return name;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getLastName() {
-		return lastName;
+	public String getLocation() {
+		return location;
 	}
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setLocation(String location) {
+		this.location = location;
 	}
 
-	public Integer getAge() {
+	public Long getAge() {
 		return age;
 	}
 
-	public void setAge(Integer age) {
+	public void setAge(Long age) {
 		this.age = age;
 	}
 
 	@Override
 	public String toString() {
-		return "User [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + "]";
+		return "User [name=" + name + ", location=" + location + ", age=" + age + "]";
 	}
 	
 	
