@@ -2,6 +2,7 @@ package in.bushansirgur.springboot.entity;
 
 public class Customer {
 	
+
 	private Long id;
 	
 	private String name;
@@ -46,4 +47,6 @@ public class Customer {
 	public String toString() {
 		return "Customer [id=" + id + ", name=" + name + ", age=" + age + ", location=" + location + "]";
 	}
+	
+	
 }

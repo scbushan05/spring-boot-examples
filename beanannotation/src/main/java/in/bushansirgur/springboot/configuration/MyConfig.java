@@ -8,8 +8,8 @@ import in.bushansirgur.springboot.service.UserService;
 @Configuration
 public class MyConfig {
 	
-	@Bean(name={"myBean", "mySecondBean"})
-    public UserService getUser() {
-        return new UserService();
-    }
+	@Bean(name= {"myBean", "myBean2"})
+	public UserService getUser() {
+		return new UserService();
+	}
 }

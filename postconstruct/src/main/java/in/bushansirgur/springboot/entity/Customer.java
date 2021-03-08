@@ -1,12 +1,16 @@
-package in.bushansirgur.springboot.model;
+package in.bushansirgur.springboot.entity;
 
-public class User {
+public class Customer {
 	
 	private String name;
 	
 	private String location;
-	
-	private Long age;
+
+	public Customer(String name, String location) {
+		super();
+		this.name = name;
+		this.location = location;
+	}
 
 	public String getName() {
 		return name;
@@ -24,17 +28,9 @@ public class User {
 		this.location = location;
 	}
 
-	public Long getAge() {
-		return age;
-	}
-
-	public void setAge(Long age) {
-		this.age = age;
-	}
-
 	@Override
 	public String toString() {
-		return "User [name=" + name + ", location=" + location + ", age=" + age + "]";
+		return "Customer [name=" + name + ", location=" + location + "]";
 	}
 	
 	

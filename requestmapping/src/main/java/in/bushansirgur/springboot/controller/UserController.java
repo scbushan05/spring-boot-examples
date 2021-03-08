@@ -5,17 +5,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/users")
 public class UserController {
 
-	@RequestMapping("/user")
+	@RequestMapping(value = {"/user", "/user1", "/user2"}, method=RequestMethod.GET)
 	public String getUser() {
-		return "getUser()";
-	}
-	
-	@RequestMapping(value = {"/seconduser", "/second-user", "/secondUser"}, 
-					method = RequestMethod.GET)
-	public String getSecondUser() {
-		return "getSecondUser()";
+		return "Success";
 	}
 }

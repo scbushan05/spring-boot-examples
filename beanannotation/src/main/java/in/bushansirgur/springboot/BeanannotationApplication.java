@@ -13,9 +13,10 @@ public class BeanannotationApplication{
 	public static void main(String[] args) {
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(BeanannotationApplication.class);
 		//By its type
-		UserService user = ctx.getBean(UserService.class);
-		//By its alias name
-		//UserService user = (UserService)ctx.getBean("myBean");
-		System.out.println("Printing user:"+user.getList());
+		//UserService uService = ctx.getBean(UserService.class);
+		//by its alias name
+		UserService uService = (UserService)ctx.getBean("myBean");
+		System.out.println("Printing user service::"+uService.getList());
+		
 	}
 }

@@ -7,7 +7,7 @@ import in.bushansirgur.springboot.entity.User;
 
 public class UserService {
 	
-	private static List<User> list = new ArrayList<>(); 
+	private static List<User> list = new ArrayList<User>();
 	
 	static {
 		User u = new User("User 1");
@@ -20,7 +20,12 @@ public class UserService {
 		list.add(u);
 	}
 	
-	public List<User> getList () {
+	public List<User> getList() {
 		return list;
 	}
+	
+	
+	
+	
+	
 }
