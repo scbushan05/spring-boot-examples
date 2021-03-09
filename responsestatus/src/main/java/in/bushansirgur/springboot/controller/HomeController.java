@@ -12,12 +12,12 @@ public class HomeController {
 	
 	@GetMapping("/test/{id}")
 	public String test (@PathVariable Long id) {
-		return "The passed id is "+id;
+		return "The passed id is "+id; 
 	}
 	
-@ResponseStatus(value = HttpStatus.BAD_REQUEST, reason = "Pass integer only")
-@ExceptionHandler(IllegalArgumentException.class)
-public String handleException (IllegalArgumentException ex) {
-	return ex.getMessage();
-}
+	@ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR, reason = "Pass number only")
+	@ExceptionHandler(IllegalArgumentException.class)
+	public String handleException (IllegalArgumentException ex) {
+		return ex.getMessage();
+	}
 }
