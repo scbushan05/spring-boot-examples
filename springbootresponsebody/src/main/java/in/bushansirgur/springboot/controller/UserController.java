@@ -16,6 +16,5 @@ public class UserController {
 		user.setAge(28L);
 		user.setLocation("India");
 		return user;
-		
 	}
 }

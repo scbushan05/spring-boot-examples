@@ -9,7 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 	
-	@GetMapping("/test")
+	@GetMapping("/test1")
+	public String testRequestHeader (@RequestHeader String authorization) {
+		System.out.println("printing the auth "+authorization);
+		return "Success";
+	}
+	
+	@GetMapping("/test2")
 	public String handleRequestHeader (@RequestHeader Map<String, String> mapValues) {
 		System.out.println("printing the header"+mapValues);
 		return "Success";

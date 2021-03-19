@@ -18,15 +18,3 @@ public class CustomerController {
 		return ResponseEntity.ok().headers(headers).body(c);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
