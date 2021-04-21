@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
+		crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Todo</th>
+					<th>Description</th>
+					<th>isCompleted?</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="todo: ${todos}">
+					<td th:text="${todo.title}"></td>
+					<td th:text="${todo.description}"></td>
+					<td th:text="${todo.isCompleted}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
